@@ -60,9 +60,6 @@ const ResetStyle = createGlobalStyle`
         font-style: inherit;
         text-decoration: inherit;
     }
-    body{
-        background-color: purple;
-    }
 `;
 
 export default ResetStyle;

@@ -16,7 +16,7 @@ export default function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Raleway&family=Saira+Stencil+One&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Saira+Stencil+One&display=swap"
           rel="stylesheet"
         />
       </Helmet>

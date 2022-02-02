@@ -1,4 +1,4 @@
-import { Button, Container, Input, StyledLink, Logo } from "../../components/FormComponents";
+import { SubmitButton, Container, Input, StyledLink, Logo } from "../../components/FormComponents";
 
 export default function SignUp(){
   return(
@@ -10,7 +10,7 @@ export default function SignUp(){
         <Input placeholder="Senha"></Input>
         <Input placeholder="Confirme a senha"></Input>
         
-        <Button>Cadastrar</Button>
+        <SubmitButton>Cadastrar</SubmitButton>
         
         <StyledLink to="/">Já tem uma conta? Entre agora!</StyledLink>
       </Container>
