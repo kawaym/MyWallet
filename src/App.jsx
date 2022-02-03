@@ -26,8 +26,14 @@ export default function App() {
           <Route path="/" element={<Login />}></Route>
           <Route path="/cadastro" element={<SignUp />}></Route>
           <Route path="/historico" element={<History />}></Route>
-          <Route path="/nova-transacao" element={<NewTransaction />}></Route>
-          <Route path="/editar-transacao" element={<EditTransaction />}></Route>
+          <Route
+            path="/nova-transacao"
+            element={<NewTransaction type="in" />}
+          ></Route>
+          <Route
+            path="/editar-transacao"
+            element={<EditTransaction type="out" />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>

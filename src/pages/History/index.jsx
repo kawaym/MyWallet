@@ -1,4 +1,5 @@
 import { Container } from "../../components/FormComponents";
+import TransactionHistoryButton from "../../components/General/TransactionHistoryButton";
 import TransactionButton from "../../components/History/TransactionButton";
 import { ButtonContainer, TransactionsContainer, UserContainer } from "./style";
 import { IoExitOutline } from "react-icons/io5";
@@ -11,7 +12,8 @@ export default function History() {
       </UserContainer>
 
       <TransactionsContainer>
-        Não há registros de entrada ou saída
+        <TransactionHistoryButton></TransactionHistoryButton>
+        <TransactionHistoryButton></TransactionHistoryButton>
       </TransactionsContainer>
 
       <ButtonContainer>

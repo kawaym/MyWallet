@@ -1,9 +1,5 @@
-export default function NewTransaction(){
-  return(
-    <>
-      <h1>Transação</h1>
-      <h2>Nova</h2>
-      <h3>Aqui</h3>
-    </>
-  )
+import TransactionPage from "../../components/General/TransactionPage";
+
+export default function NewTransaction({type}) {
+  return <TransactionPage type={type} operation="create"></TransactionPage>;
 }

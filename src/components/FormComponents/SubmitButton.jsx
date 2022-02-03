@@ -7,6 +7,7 @@ const SubmitButton = styled.button`
   border-radius: 5px;
 
   font-family: Raleway;
+  font-weight: bold;  
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;

@@ -1,9 +1,5 @@
-export default function EditTransaction(){
-  return(
-    <>
-      <h1>Transação</h1>
-      <h2>Editar</h2>
-      <h3>Aqui</h3>
-    </>
-  )
+import TransactionPage from "../../components/General/TransactionPage";
+
+export default function EditTransaction({ type }) {
+  return <TransactionPage type={type} operation={"update"}></TransactionPage>;
 }

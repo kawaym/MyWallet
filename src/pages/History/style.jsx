@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.div`
-  width: 90%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding-bottom: 15px;
-`;
-
 export const UserContainer = styled.div`
   width: 90%;
 
@@ -35,8 +25,22 @@ export const TransactionsContainer = styled.div`
   background-color: #ffffff;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 15px;
+  justify-content: flex-start;
 
-  color: #cacaca;
+  font-size: 20px;
+  line-height: 23px;
+  color: #868686;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
 `;
