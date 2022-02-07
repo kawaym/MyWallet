@@ -8,6 +8,8 @@ import {
 } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { AuthProvider } from "./contexts/AuthContext";
+import { NameProvider } from "./contexts/NameContext";
 
 export default function App() {
   return (
@@ -21,21 +23,25 @@ export default function App() {
         />
       </Helmet>
       <ResetStyle />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/cadastro" element={<SignUp />}></Route>
-          <Route path="/historico" element={<History />}></Route>
-          <Route
-            path="/nova-transacao"
-            element={<NewTransaction type="in" />}
-          ></Route>
-          <Route
-            path="/editar-transacao"
-            element={<EditTransaction type="out" />}
-          ></Route>
-        </Routes>
-      </BrowserRouter>
+      <NameProvider>
+        <AuthProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="/cadastro" element={<SignUp />}></Route>
+              <Route path="/" element={<History />}></Route>
+              <Route
+                path="/nova-transacao-:type"
+                element={<NewTransaction />}
+              ></Route>
+              <Route
+                path="/editar-transacao"
+                element={<EditTransaction type="out" />}
+              ></Route>
+            </Routes>
+          </BrowserRouter>
+        </AuthProvider>
+      </NameProvider>
     </>
   );
 }

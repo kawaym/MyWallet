@@ -22,14 +22,14 @@ const DateContainer = styled.div`
 const NameContainer = styled.div`
   width: 100%;
   text-align: left;
-  padding-left: 5px;
+  padding-left: 15px;
   color: #000000;
 `;
 const ValueContainer = styled.div`
   width: 25%;
   text-align: right;
 
-  color: ${(props) => (props.type === "out" ? "#C70000" : "#03AC00")};
+  color: ${(props) => (props.type === "saida" ? "#C70000" : "#03AC00")};
 `;
 
 export { Container, DateContainer, NameContainer, ValueContainer };

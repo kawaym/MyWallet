@@ -5,6 +5,7 @@ const StyledLink = styled(Link)`
   font-family: Raleway;
   font-size: 15px;
   line-height: 18px;
+  font-weight: bold;
 
   color: #ffffff;
 

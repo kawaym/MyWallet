@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Input = styled.input`
   height: 58px;
-  width: 90%;
+  width: 100%;
 
   font-family: Raleway;
   font-size: 20px;
@@ -22,6 +22,9 @@ const Input = styled.input`
     line-height: 23px;
 
     color: #CACACA;
+  }
+  &:disabled{
+    background-color: #ffffff;
   }
 `
 export default Input;

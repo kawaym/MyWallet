@@ -1,11 +1,11 @@
 import { Container, DateContainer, NameContainer, ValueContainer } from "./style";
 
-export default function TransactionHistoryButton(){
+export default function TransactionHistoryButton({date, name, value, type}){
   return(
     <Container type="button">
-      <DateContainer>24/11</DateContainer>
-      <NameContainer>Teste</NameContainer>
-      <ValueContainer type="in">50,00</ValueContainer>
+      <DateContainer>{date}</DateContainer>
+      <NameContainer>{name}</NameContainer>
+      <ValueContainer type={type}>{value}</ValueContainer>
     </Container>
   )
 }

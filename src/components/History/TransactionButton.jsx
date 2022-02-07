@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
-function TransactionButton({ type }) {
+function TransactionButton({ type, onClick }) {
   return (
-    <Button>
+    <Button onClick={onClick}>
       {type === "out" ? (
         <AiOutlineMinusCircle size={25}></AiOutlineMinusCircle>
       ) : (
@@ -17,7 +17,7 @@ function TransactionButton({ type }) {
 
 const Button = styled.button`
   height: 114px;
-  width: 156px;
+  width: 48%;
 
   background: #a328d6;
   border-radius: 5px;

@@ -11,6 +11,10 @@ const SubmitButton = styled.button`
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default SubmitButton;
