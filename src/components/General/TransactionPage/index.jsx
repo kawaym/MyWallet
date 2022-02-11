@@ -36,12 +36,9 @@ export default function TransactionPage({ type, operation }) {
             type
           );
           promise.then((response) => {
-            console.log(response);
             navigate("/");
           });
           promise.catch((response) => {
-            console.log(JSON.stringify(response, null, 2));
-
             const errorCode = parseInt(response.message.slice(-3));
             if (errorCode === 401) {
               alert("Usuário Inválido");
